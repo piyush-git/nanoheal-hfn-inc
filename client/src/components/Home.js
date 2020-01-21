@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import MovieCard from './MovieCard';
 import AddMovie from './AddMovie';
+import Search from './Search';
 
 export default class Home extends Component {
     constructor(props) {
@@ -65,7 +66,12 @@ export default class Home extends Component {
                             : null
                     }
                 </div>
-                <AddMovie style={{ textAlign: 'center', marginTop: '50px' }}/>
+                <div style={{textAlign: 'center', marginTop: '50px' }}>
+                    <AddMovie />
+                </div>
+                <div style={{textAlign: 'center', marginTop: '50px' }}>
+                    <Search />
+                </div>
             </div>
         )
     }

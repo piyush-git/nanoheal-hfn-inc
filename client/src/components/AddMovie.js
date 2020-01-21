@@ -95,7 +95,7 @@ export default class AddMovie extends Component {
                     <br />
 
                     <button onClick={this.handleClick}>
-                        Submit
+                        Add
                     </button>
                 </div>
             </div>
