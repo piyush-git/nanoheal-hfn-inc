@@ -56,7 +56,7 @@ def list_movies():
     return {"movies": results, "status": 200}
 
 
-@app.route('/search-movies', methods=["GET"])
+@app.route('/search-movies', methods=["POST"])
 def search_cars():
     movie_name = request.json["movie_name"]
 
